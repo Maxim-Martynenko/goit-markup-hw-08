@@ -1,0 +1,153 @@
+footer {
+  background-color: $footer-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer__adr {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  color: #ffffff;
+
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+
+.footer__cont {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__mail {
+  padding-bottom: 9px;
+}
+
+/* subscribe */
+.subscribe {
+  margin-left: 70px;
+  width: 206px;
+  height: 80px;
+}
+
+.subscribe__title {
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+
+  color: #ffffff;
+}
+
+.subscribe__list {
+  display: flex;
+  margin-top: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe__link {
+  display: flex;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $active-btn-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.subscribe__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscribe__icon {
+  width: 20px;
+  height: 20px;
+  fill: #ffff;
+}
+
+.subscribe__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* input */
+
+.mail-form {
+  margin-left: 93px;
+
+  & input::placeholder {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+  }
+}
+
+.mail__input {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: $footer-color;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.mail__btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+
+  width: 200px;
+  height: 50px;
+
+  cursor: pointer;
+  border-radius: 4px;
+  border: 0;
+
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  &::after {
+    content: '';
+
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+
+    background-size: contain;
+    background-image: url(../img/svg/icon-send.svg);
+  }
+}
