@@ -1,13 +1,15 @@
 .pluses {
   display: flex;
+  @media screen and (max-width: $max-tablet) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .pluses__container {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  width: 270px;
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
@@ -16,10 +18,35 @@
 }
 
 .pluses li {
-  width: 270px;
+  min-width: 270px;
 
-  & li:not(:last-child) {
+  &:not(:last-child) {
     margin-right: 30px;
+  }
+
+  @media screen and (max-width: $max-tablet) {
+    max-width: 354px;
+    &:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 0px;
+    }
+
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (max-width: $max-mobile) {
+    max-width: 450px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    &:nth-child(2n + 1) {
+      margin-right: 0px;
+    }
   }
 }
 
@@ -41,6 +68,10 @@
 
 .section--small {
   padding-top: 0px;
+
+  @media screen and (max-width: $max-tablet) {
+    display: none;
+  }
 }
 
 .pluses__title {

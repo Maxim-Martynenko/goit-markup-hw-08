@@ -8,6 +8,23 @@
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+
+  @media screen and (max-width: 480px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../img/main-img-m.jpg');
+    background-size: cover;
+  }
+
+  @media screen and (min-width: 481px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../img/main-img-t.jpg');
+    background-size: cover;
+  }
+
+  @media screen and (min-width: 1199px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../img/main-img.jpg');
+  }
 }
 
 .main__title {
@@ -21,6 +38,11 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: $header-color;
+
+  @media screen and (max-width: $max-tablet) {
+    font-size: 26px;
+    line-height: 1.62;
+  }
 }
 
 .main__btn {

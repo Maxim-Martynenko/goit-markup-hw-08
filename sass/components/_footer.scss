@@ -7,6 +7,17 @@ footer {
 .footer {
   display: flex;
   justify-content: flex-start;
+
+  @media screen and (max-width: $max-tablet) {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  @media screen and (max-width: $max-mobile) {
+    display: block;
+    text-align: center;
+  }
 }
 
 .footer__adr {
@@ -37,6 +48,17 @@ footer {
   margin-left: 70px;
   width: 206px;
   height: 80px;
+
+  @media screen and (max-width: $max-tablet) {
+    margin-left: 165px;
+  }
+
+  @media screen and (max-width: $max-mobile) {
+    margin-left: 50%;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    transform: translate(-50%);
+  }
 }
 
 .subscribe__title {
@@ -102,10 +124,15 @@ footer {
     line-height: 20px;
     letter-spacing: 0.03em;
   }
+  @media screen and (max-width: $max-tablet) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+  }
 }
 
 .mail__input {
-  width: 358px;
+  min-width: 358px;
   height: 50px;
   padding-left: 16px;
 
@@ -114,6 +141,21 @@ footer {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   background-color: $footer-color;
   color: rgba(255, 255, 255, 0.6);
+
+  @media screen and (max-width: $max-tablet) {
+    min-width: 450px;
+    margin-left: 50%;
+    margin-bottom: 20px;
+    transform: translate(-50%);
+  }
+
+  @media screen and (max-width: $max-mobile) {
+    margin-right: 50%;
+  }
+
+  @media screen and (max-width: $mobile) {
+    min-width: 320px;
+  }
 }
 
 .mail__btn {

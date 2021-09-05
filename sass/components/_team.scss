@@ -26,6 +26,10 @@
 
 .team__list {
   display: flex;
+  @media screen and (max-width: $max-tablet) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .team__item {
@@ -38,6 +42,22 @@
 
   &:not(:last-child) {
     margin-right: 30px;
+  }
+
+  @media screen and (max-width: $max-tablet) {
+    &:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (max-width: $max-mobile) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 }
 

@@ -7,10 +7,33 @@
   display: flex;
   justify-content: center;
   margin-bottom: 56px;
+
+  @media screen and (max-width: $mobile) {
+    display: block;
+  }
+
+  @media screen and (min-width: $mobile) {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 }
 
 .filter li:not(:last-child) {
   margin-right: 8px;
+
+  @media screen and (max-width: $max-mobile) {
+    &:nth-child(-n + 2) {
+      margin-bottom: 15px;
+    }
+  }
 }
 
 .filter__btn {
