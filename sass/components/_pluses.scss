@@ -13,6 +13,7 @@
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
+  margin-right: 0px;
 
   background-color: #f5f4fa;
 }
@@ -60,6 +61,10 @@
 
   margin-top: 0;
   margin-bottom: 50px;
+
+  @media screen and (max-width: $max-mobile) {
+    font-size: 28px;
+  }
 }
 
 .none {
@@ -81,6 +86,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+
+  @media screen and (max-width: $max-mobile) {
+    text-align: center;
+  }
 }
 
 .pluses__text {
