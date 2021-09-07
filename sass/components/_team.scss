@@ -1,5 +1,8 @@
 .team {
   background-color: $foreground-color;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .inf__name {
   font-weight: 500;

@@ -74,6 +74,7 @@ p {
 header {
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
+  width: 100vw;
 }
 
 .main-nav {
@@ -448,9 +449,10 @@ header {
   margin-bottom: 50px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .title-2 {
     font-size: 28px;
+    margin-bottom: 30px;
   }
 }
 
@@ -529,6 +531,14 @@ header {
 
 .team {
   background-color: #f5f4fa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .inf__name {
@@ -683,13 +693,15 @@ header {
   margin-right: 10px;
 }
 
-.company__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+@media screen and (max-width: 480px) {
+  .company__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -1420,18 +1432,6 @@ footer {
   margin-bottom: 56px;
 }
 
-@media screen and (max-width: 1199px) {
-  .filter {
-    margin-left: 30px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .filter {
-    margin-left: 45px;
-  }
-}
-
 @media screen and (max-width: 480px) {
   .filter {
     display: block;
@@ -1501,16 +1501,12 @@ footer {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 1199px) {
-  .card {
-    margin-left: 30px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .card {
-    margin-left: 45px;
-  }
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1539,7 +1535,6 @@ footer {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   cursor: pointer;
-  max-width: 370px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1620,13 +1615,11 @@ footer {
   position: absolute;
   top: 63px;
   left: 24px;
-  width: 322px;
-  height: 168px;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
-  -webkit-transform: translateY(150%);
-          transform: translateY(150%);
+  -webkit-transform: translateY(250%);
+          transform: translateY(250%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
